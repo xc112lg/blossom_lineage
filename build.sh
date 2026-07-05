@@ -40,7 +40,7 @@ sed -i '$a -include vendor/evolution-priv/keys/keys.mk' device/xiaomi/blossom/li
 export RBE_LOG=DEBUG
 export RBE_VERBOSE=1
 
-lunch lineage_blossom-bp4a-eng
+lunch lineage_blossom-bp4a-user
 m installclean
 #m clean #once
 m bacon
