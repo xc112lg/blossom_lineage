@@ -23,7 +23,7 @@ sudo apt update >/dev/null 2>&1
 sudo apt install patchelf -y >/dev/null 2>&1
 rm -rf .repo/local_manifests
 repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs --depth=1
-git clone https://$GH_TOKEN@github.com//xc112lg/blossom_manifest.git -b main .repo/local_manifests
+git clone https://$GH_TOKEN@github.com//xc112lg/blossom_manifest.git -b a1 .repo/local_manifests
 repo sync -c -j32 --force-sync --no-clone-bundle --no-tags
 /opt/crave/resync.sh
 source <(curl -sf https://raw.githubusercontent.com/xc112lg/scripts/refs/heads/lunaris/rbe8.sh)  >/dev/null 2>&1
