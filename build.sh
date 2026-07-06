@@ -29,7 +29,7 @@ repo sync -c -j32 --force-sync --no-clone-bundle --no-tags
 source <(curl -sf https://raw.githubusercontent.com/xc112lg/scripts/refs/heads/lunaris/rbe8.sh)  >/dev/null 2>&1
 . build/envsetup.sh
 #export WITH_GMS=true
-
+rm -rf hardware/mediatek/frameworks
 export WITH_GMS=false
 # export WITH_GMS_COMMS_SUITE := false
 # export WITH_PIXEL_LAUNCHER := false
