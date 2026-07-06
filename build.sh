@@ -16,7 +16,7 @@ rm -rf .repo/local_manifests/
 rm -rf device/xiaomi
 rm -rf kernel/xiaomi/blossom
 rm -rf vendor/lineage
-#rm -rf build
+rm -rf hardware/mediatek
 rm -rf TMP_PATCHES
 #rm -rf frameworks/base
 sudo apt update >/dev/null 2>&1
@@ -29,7 +29,7 @@ repo sync -c -j32 --force-sync --no-clone-bundle --no-tags
 source <(curl -sf https://raw.githubusercontent.com/xc112lg/scripts/refs/heads/lunaris/rbe8.sh)  >/dev/null 2>&1
 . build/envsetup.sh
 #export WITH_GMS=true
-rm -rf hardware/mediatek/frameworks
+curl -L https://github.com/xc112lg/android_hardware_mediatek/commit/b8a9f24f9ff6e8de021fa33fc65520571fcf7478.patch | git -C hardware/mediatek am
 export WITH_GMS=false
 export EVO_BUILD_TYPE=Unofficial
 # export WITH_GMS_COMMS_SUITE := false
