@@ -31,6 +31,7 @@ source <(curl -sf https://raw.githubusercontent.com/xc112lg/scripts/refs/heads/l
 #export WITH_GMS=true
 rm -rf hardware/mediatek/frameworks
 export WITH_GMS=false
+export EVO_BUILD_TYPE=Unofficial
 # export WITH_GMS_COMMS_SUITE := false
 # export WITH_PIXEL_LAUNCHER := false
 # export TARGET_USE_GPHOTOS := false
