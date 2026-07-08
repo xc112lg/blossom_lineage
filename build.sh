@@ -47,6 +47,7 @@ sed -i '/^import subprocess$/a from datetime import datetime, timezone' build/so
 export TARGET_USES_PICO_GAPPS=true
 export TARGET_INCLUDE_VIA=true
 export TARGET_INCLUDE_REVAMPED=true
+export SELINUX_IGNORE_NEVERALLOWS=true
 sed -i '$a -include vendor/evolution-priv/keys/keys.mk' device/xiaomi/blossom/lineage_blossom.mk
 #sed -i '\|vendor/extras/prebuilt/product/fonts,\$(TARGET_COPY_OUT_PRODUCT)/fonts|d' vendor/extras/evolution.mk
 #sed -i '/<item>com.android.nfc<\/item>/d' frameworks/base/core/res/res/values/policy_exempt_apps.xml
