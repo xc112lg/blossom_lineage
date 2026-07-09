@@ -148,7 +148,7 @@ DOWNLOADS_SECTION+="
 
 
 # Create full Telegram message
-TELEGRAM_MESSAGE="<b>EvolutionX-16.0 | UNOFFICIAL📱</b>
+TELEGRAM_MESSAGE="<b>Lineage-23.2 | UNOFFICIAL📱</b>
 
 <b>Device:</b>Blossom
 <b>👨‍💻 Builder:</b> <a href=\"http://t.me/xc112lg\">xc112lg</a>
