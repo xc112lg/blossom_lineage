@@ -27,6 +27,7 @@ cp out/target/product/*/*.zip blossom_lineage/
 # ls -lh blossom_lunaris/test.zip
 cp out/target/product/*/*.tar blossom_lineage
 cd blossom_lineage
+rm *-ota.zip
 chmod +x multi_upload3.sh
 ./multi_upload3.sh > /dev/null
 else

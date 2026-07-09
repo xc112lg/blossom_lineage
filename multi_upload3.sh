@@ -31,7 +31,7 @@ else
     echo "Already authenticated with GitHub."
 fi
 
-version=${custom_version:-"EvolutionX-16.0-$(date '+%Y%m%d')"}
+version=${custom_version:-"lineage-23.2-$(date '+%Y%m%d')"}
 
 if gh release view "$version" &> /dev/null; then
     echo "Deleting existing tag and releases for $version..."
@@ -160,36 +160,35 @@ TELEGRAM_MESSAGE="<b>EvolutionX-16.0 | UNOFFICIAL📱</b>
 $DOWNLOADS_SECTION
 
 <b>🐞 Issues:</b>
-• NFC not working
+NFC not working
+Cant change to stock kernel
 
 <b>🐞 Fixes:</b>
-• NFC wont spawn on non NFC variant
-• Dolby and Audio 
-• Data unencrypted so you change in recovery directly
+NFC wont spawn on non NFC variant
 
 <b>📝 Notes:</b>
-• Deleted Sandbox and additional fonts to save more space
-• Work with both core and basic gapps
-• Signed
-• Includes MIUI Camera,Lunari Dolby
-• June security patch
-• Default Kernel Sashimi
+Debloated
+Work with both core and basic gapps
+Signed
+Includes MIUI Camera,Lunari Dolby
+July security patch
+Default Kernel Sashimi
 
 <b>❤️ Credits & Thanks:</b>
-• @HaiKitoo for trees
-• @fukiame for kernel
-• @Yohanyuan for audio fix
-• @astechpro20 for msg template
-• Yui Onanii, fukiame, @snnbyyds, <a href=\"http://t.me/Sushrut1101\">Sushrut</a>, xiaomi-blossom-dev contributors for base tree
-• Thanks to <a href=\"http://foss.crave.io\">crave.io</a> for server
-• 0kaarun & Yohan Yuan for their help
-• Thanks to all other devs
+@HaiKitoo and 0kaarun for trees
+zyexro for kernel
+@Yohanyuan for audio fix
+@astechpro20 for msg template
+Yui Onanii, fukiame, @snnbyyds, <a href=\"http://t.me/Sushrut1101\">Sushrut</a>, xiaomi-blossom-dev contributors for base tree
+Thanks to <a href=\"http://foss.crave.io\">crave.io</a> for server
+0kaarun & Yohan Yuan for their help
+Thanks to all other devs
 
 <b>🌐 Stay Updated:</b>
 📢 @xc112lgblossomupdate
 📢 @xc112lgblossomupdate1
 
-#blossom #UNOFFICIAL #Evolution-X #lunaridolby #Rom"
+#blossom #UNOFFICIAL #lineage-23.2 #lunaridolby #Rom"
 
 # Send Telegram message with smart fallback
 if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
@@ -198,7 +197,7 @@ else
     echo "Sending Telegram notification..."
 
     # Banner image URL
-    BANNER_IMAGE="https://github.com/Evolution-X/manifest/raw/bka/Banner.png"
+    BANNER_IMAGE="https://upload.wikimedia.org/wikipedia/commons/a/a3/Lineageos_logo.png"
 
     # Check message length
     MSG_LENGTH=${#TELEGRAM_MESSAGE}
